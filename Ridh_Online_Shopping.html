@@ -90,6 +90,9 @@
             animation-iteration-count: infinite;
             cursor: pointer;
         }
+        .dropright:hover .dropdown-menu {
+            display: block;
+        }
     </style>
 </head>
 
@@ -174,10 +177,68 @@
         </nav>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-light">
-            <a class="navbar-brand text-info" href="#">Inventory</a>
-            <button class="navbar-toggler bg-info" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+            <!-- Inventory with dropdown -->
+            <div class="nav-item dropdown">
+                <a class="navbar-brand dropdown-toggle text-info" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Inventory
+                </a>
+                <div class="dropright dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Desktop Laptop
+                        </button>
+                        <div class="dropdown-menu">
+                         <!-- Dropdown menu links -->
+                            <a class="dropdown-item" href="#">News</a>
+                            <a class="dropdown-item" href="#">News</a>
+                            <a class="dropdown-item" href="#">News</a>
+                        </div>
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Laptop Computer
+                        </button>
+                        <div class="dropdown-menu">
+                             <!-- Dropdown menu links -->
+                            <a class="dropdown-item" href="#">News</a>
+                            <a class="dropdown-item" href="#">News</a>
+                            <a class="dropdown-item" href="#">News</a>
+                        </div>
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Components Desktop
+                        </button>
+                        <div class="dropdown-menu">
+                            <!-- Dropdown menu links -->
+                            <a class="dropdown-item" href="#">News</a>
+                            <a class="dropdown-item" href="#">News</a>
+                            <a class="dropdown-item" href="#">News</a>
+                        </div>
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Gaming Gear
+                            </button>
+                        <div class="dropdown-menu">
+                            <!-- Dropdown menu links -->
+                            <a class="dropdown-item" href="#">News</a>
+                            <a class="dropdown-item" href="#">News</a>
+                            <a class="dropdown-item" href="#">News</a>
+                            </div>
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Projector Device
+                        </button>
+                            <div class="dropdown-menu">
+                                <!-- Dropdown menu links -->
+                            <a class="dropdown-item" href="#">News</a>
+                            <a class="dropdown-item" href="#">News</a>
+                            <a class="dropdown-item" href="#">News</a>
+                            </div>
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Printer & Scanner
+                        </button>
+                            <div class="dropdown-menu">
+                            <!-- Dropdown menu links -->
+                            <a class="dropdown-item" href="#">News</a>
+                            <a class="dropdown-item" href="#">News</a>
+                            <a class="dropdown-item" href="#">News</a>
+                        </div>
+                </div>
+            </div>
 
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav nav-fill w-100 bg">
@@ -273,8 +334,9 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
+        
         </div>
-        <!-- Card desk template -->
+        <!-- Card desk template 1-->
         <div class="card-deck mt-3">
             <div class="card">
                 <img class="card-img-top img-fluid img-thumbnail" src="Images/MacBook-Pro-16-inch.jpg" alt="Card image cap" title="MacBook Pro 16-inch">
@@ -307,7 +369,133 @@
                 </div>
             </div>
         </div>
-        <!--  -->
+        <!-- Breaking New Demo 3 -->
+                <div class="demo-box">
+    
+                    <!-- DEMO3 HTML STARTS HERE *-->
+                    <!-- *********************** -->
+                    <div class="breaking-news-ticker" id="newsTicker3">
+                        <div class="bn-label">List</div>
+                        <div class="bn-news">
+                            <ul>
+                                <li><span class="bn-prefix">Braveheart, 1995 :</span>"They may take our lives, but they'll never take our freedom!"</li>
+                                <li><span class="bn-prefix">Star Wars Episode VII: The Force Awakens, 2015 :</span>"Chewie, we're home."</li>
+                                <li><span class="bn-prefix">Pulp Fiction, 1994 :</span>"They call it a Royale with cheese."
+                                </li>
+                                <li><span class="bn-prefix">Jerry Maguire, 1996 :</span>"You complete me."</li>
+                                <li><span class="bn-prefix">The Godfather: Part III, 1990 :</span>"Just when I thought I was out, they pull me back in."</li>
+                            </ul>
+                        </div>
+                        <div class="bn-controls">
+                            <button><span class="bn-arrow bn-prev"></span></button>
+                            <button><span class="bn-arrow bn-next"></span></button>
+                        </div>
+                    </div>
+                    <!-- *********************** -->
+                    <!-- DEMO3 HTML END HERE *** -->
+    
+                </div>
+        <!-- Card desk template 2 -->
+        <div class="card-deck mt-3">
+            <div class="card">
+                <img class="card-img-top img-fluid img-thumbnail" src="Images/MacBook-Pro-16-inch.jpg" alt="Card image cap" title="MacBook Pro 16-inch">
+                <div class="card-body">
+                    <h5 class="card-title text-danger">Mackbook Pro 16-inch</h5>
+                    <p class="card-text text-success">Core i9 9Gen 2.3 GHz | RAM 16GB | 1TB SSD PCie<br>AMD Radeon Pro 5500M | 16" Retina</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top img-fluid img-thumbnail" src="Images/MacBook-Pro-13-inch.jpg" alt="Card image cap" title="MacBook Pro 13-inch">
+                <div class="card-body">
+                    <h5 class="card-title text-danger">MacBook Pro 13-inch</h5>
+                    <p class="card-text text-success">Apple M1 Chip (CPU 8 Core/GPU 7 Core) | RAM 8GB | 512 SSD PCie | Apple M1 Graphics | 13.3" Retina</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top img-fluid img-thumbnail" src="Images/MacBook-Air.jpg" alt="Card image cap" title="MacBook Air">
+                <div class="card-body">
+                    <h5 class="card-title text-danger">MacBook Air</h5>
+                    <p class="card-text text-success">Apple M1 Chip | RAM 8GB | 512 SSD PCie</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+        <!-- Card desk template 3 -->
+        <div class="card-deck mt-3">
+            <div class="card">
+                <img class="card-img-top img-fluid img-thumbnail" src="Images/MacBook-Pro-16-inch.jpg" alt="Card image cap" title="MacBook Pro 16-inch">
+                <div class="card-body">
+                    <h5 class="card-title text-danger">Mackbook Pro 16-inch</h5>
+                    <p class="card-text text-success">Core i9 9Gen 2.3 GHz | RAM 16GB | 1TB SSD PCie<br>AMD Radeon Pro 5500M | 16" Retina</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top img-fluid img-thumbnail" src="Images/MacBook-Pro-13-inch.jpg" alt="Card image cap" title="MacBook Pro 13-inch">
+                <div class="card-body">
+                    <h5 class="card-title text-danger">MacBook Pro 13-inch</h5>
+                    <p class="card-text text-success">Apple M1 Chip (CPU 8 Core/GPU 7 Core) | RAM 8GB | 512 SSD PCie | Apple M1 Graphics | 13.3" Retina</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top img-fluid img-thumbnail" src="Images/MacBook-Air.jpg" alt="Card image cap" title="MacBook Air">
+                <div class="card-body">
+                    <h5 class="card-title text-danger">MacBook Air</h5>
+                    <p class="card-text text-success">Apple M1 Chip | RAM 8GB | 512 SSD PCie</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+        <!-- Breaking new demo 9 -->
+                <div class="demo-box">
+    
+                    <!-- DEMO9 HTML STARTS HERE *-->
+                    <!-- *********************** -->
+                    <div class="breaking-news-ticker" id="newsTicker9">
+                        <div class="bn-label">More Product</div>
+                        <div class="bn-news">
+                            <ul>
+                                <li><a href="#">1.1. There many variations of passages of Lorem Ipsum available</a></li>
+                                <li><a href="#">1.2. Ipsum is simply dummy text of the printing and typesetting industry</a>
+                                </li>
+                                <li><a href="#">1.3. Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        industry</a></li>
+                                <li><a href="#">1.4. Lorem simply dummy text of the printing and typesetting industry</a>
+                                </li>
+                                <li><a href="#">1.5. Ipsum is simply dummy of the printing and typesetting industry</a></li>
+                                <li><a href="#">1.6. Lorem Ipsum simply dummy text of the printing and typesetting
+                                        industry</a></li>
+                                <li><a href="#">1.7. Ipsum is simply dummy text of the printing typesetting industry</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bn-controls">
+                            <button><span class="bn-arrow bn-prev"></span></button>
+                            <button><span class="bn-action"></span></button>
+                            <button><span class="bn-arrow bn-next"></span></button>
+                        </div>
+                    </div>
+                </div>
+                    <!-- *********************** -->
+                    <!-- DEMO9 HTML END HERE *** -->
+        <!-- Image part -->
+        <div>
+        <!-- Img/1 -->
         <div class="row">
             <div class="col-3">
                 <img class="card-img-top img-fluid img-thumbnail" src="Images/Mac-mini.jpg" alt=" " title="Mac mini">
@@ -353,6 +541,100 @@
                 </div>
             </div>
         </div>
+        <!-- Img/2 -->
+        <div class="row">
+            <div class="col-3">
+                <img class="card-img-top img-fluid img-thumbnail" src="Images/Mac-mini.jpg" alt=" " title="Mac mini">
+            </div>
+            <div class="col-9">
+                <div class="row row-cols-1 row-cols-md-4">
+                    <div class="col mb-4">
+                        <div class="card h-100">
+                            <img src="Images/MacBook-Pro-16-inch.jpg" class="card-img-top img-fluid img-thumbnail" alt=" " title="MacBook Pro 16-inch">
+                            <div class="card-body">
+                                <h5 class="card-title text-danger">Mackbook Pro 16-inch</h5>
+                                <p class="card-text text-center text-success">5.00$</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card h-100">
+                            <img src="Images/MacBook-Pro-16-inch.jpg" class="card-img-top img-fluid img-thumbnail" alt=" " title="MacBook Pro 16-inch">
+                            <div class="card-body">
+                                <h5 class="card-title text-danger">Mackbook Pro 16-inch</h5>
+                                <p class="card-text text-center text-success">5.00$</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card h-100">
+                            <img src="Images/MacBook-Pro-16-inch.jpg" class="card-img-top img-fluid img-thumbnail" alt=" " title="MacBook Pro 16-inch">
+                            <div class="card-body">
+                                <h5 class="card-title text-danger">Mackbook Pro 16-inch</h5>
+                                <p class="card-text text-center text-success">5.00$</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card h-100">
+                            <img src="Images/MacBook-Pro-16-inch.jpg" class="card-img-top img-fluid img-thumbnail" alt=" " title="MacBook Pro 16-inch">
+                            <div class="card-body">
+                                <h5 class="card-title text-danger">Mackbook Pro 16-inch</h5>
+                                <p class="card-text text-center text-success">5.00$</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Img/3 -->
+        <div class="row">
+            <div class="col-3">
+                <img class="card-img-top img-fluid img-thumbnail" src="Images/Mac-mini.jpg" alt=" " title="Mac mini">
+            </div>
+            <div class="col-9">
+                <div class="row row-cols-1 row-cols-md-4">
+                    <div class="col mb-4">
+                        <div class="card h-100">
+                            <img src="Images/MacBook-Pro-16-inch.jpg" class="card-img-top img-fluid img-thumbnail" alt=" " title="MacBook Pro 16-inch">
+                            <div class="card-body">
+                                <h5 class="card-title text-danger">Mackbook Pro 16-inch</h5>
+                                <p class="card-text text-center text-success">5.00$</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card h-100">
+                            <img src="Images/MacBook-Pro-16-inch.jpg" class="card-img-top img-fluid img-thumbnail" alt=" " title="MacBook Pro 16-inch">
+                            <div class="card-body">
+                                <h5 class="card-title text-danger">Mackbook Pro 16-inch</h5>
+                                <p class="card-text text-center text-success">5.00$</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card h-100">
+                            <img src="Images/MacBook-Pro-16-inch.jpg" class="card-img-top img-fluid img-thumbnail" alt=" " title="MacBook Pro 16-inch">
+                            <div class="card-body">
+                                <h5 class="card-title text-danger">Mackbook Pro 16-inch</h5>
+                                <p class="card-text text-center text-success">5.00$</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card h-100">
+                            <img src="Images/MacBook-Pro-16-inch.jpg" class="card-img-top img-fluid img-thumbnail" alt=" " title="MacBook Pro 16-inch">
+                            <div class="card-body">
+                                <h5 class="card-title text-danger">Mackbook Pro 16-inch</h5>
+                                <p class="card-text text-center text-success">5.00$</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Button group -->
         <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
             <div class="btn-group mr-2" role="group" aria-label="First group">
               <button type="button" class="btn btn-secondary">Previous</button>
@@ -376,6 +658,7 @@
             </div>
           </div>
           </div>
+        <!-- Footer -->
         <div class="card-footer text-muted text-center">
             <p>© 2021 Copyright: "Ridh"</p>
         </div>
