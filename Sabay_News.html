@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <link rel="SHORTCUT ICON" href="https://news.sabay.com.kh/favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!--  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- Khmer Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@400;700&display=swap" rel="stylesheet" />
+    <!-- Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Sabay News</title>
+    <style>
+      .navbar {
+        position: relative;
+        min-height: 50px;
+        margin-bottom: 22px;
+      }
+      .khFont {
+        font-family: "Koulen", cursive;
+      }
+      .khFont01 {
+        font-family: "Hanuman", serif;
+      }
+      .khFont-small {
+        font-size: small;
+      }
+      .mybg {
+        background-color: #101010;
+      }
+      .nbColor {
+        background-color: #fa1939;
+      }
+      .menu:hover {
+        background: #9e0910;
+        color: #bdb9a6;
+      }
+      .mymg {
+        margin-left: 150px;
+      }
+      .nav-link {
+        margin-left: 25px;
+        margin-right: 25px;
+        width: 100%;
+        font-size: 18px;
+      }
+      .bottom-center {
+        position: absolute;
+        bottom: 50px;
+        right: auto;
+        color: white;
+        font-size: larger;
+      }
+      .bottom-left {
+        position: absolute;
+        bottom: 8px;
+        left: 20px;
+        color: white;
+        font-size: small;
+      }
+      a {
+        text-align: center;
+      }
+      #khFont:hover {
+        animation: slideOutUp;
+        animation-duration: 3s;
+        cursor: pointer;
+      }
+      .Newsimg:hover {
+        background-color: #00000033;
+        -webkit-filter: blur(2px);
+        filter: blur(2px);
+      }
+      .footer {
+        background-color: #000;
+        padding: 40px 0;
+        margin-top: 80px;
+        color: #abaaab;
+      }
+      .img-pulse:hover {
+        animation: pulse;
+        animation-duration: 3s;
+        cursor: pointer;
+      }
+      /* Drawing and texts*/
+      #trapezoid {
+        position: absolute;
+        border-bottom: 50px solid #fa1939;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        height: 0;
+        width: 125px;
+        z-index: 1;
+      }
+      #triangle-topleft {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 50px solid #fa1939;
+        border-right: 50px solid transparent;
+        margin-top: 1px;
+      }
+      #line {
+        position: absolute;
+        width: 75%;
+        height: 47px;
+        border-bottom: 5px solid #fa1939;
+        margin-top: 5px;
+      }
+      #textinside {
+        position: absolute;
+        color: #ffffff;
+        font-size: larger;
+        margin-top: 15px;
+        margin-left: 10px;
+        z-index: 2;
+      }
+      /* Drawing and texts*/
+    </style>
+  </head>
+  <body>
+    <!-- Logo -->
+    <div class="mybg">
+      <a class="navbar-brand mybg m-3 ml-5" href="#">
+        <img src="Sabay_News Images/logo.png" width="80" height="80" class="d-inline-block align-top mymg" alt="" title="Sabay News" />
+      </a>
+    </div>
+    <!-- Navbar -->
+    <nav id="menu" class="navbar navbar-expand-lg navbar-dark nbColor" role="navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
+          </li>
+          <li class="nav-item active khFont">
+            <a class="nav-link" href="#">កម្សាន្ដ</a>
+          </li>
+          <li class="nav-item active khFont">
+            <a class="nav-link" href="#">បច្ចេកវិទ្យា</a>
+          </li>
+          <li class="nav-item active khFont">
+            <a class="nav-link" href="#">ជីវិតនិងសង្គម</a>
+          </li>
+          <li class="nav-item active khFont">
+            <a class="nav-link" href="#">កីឡា</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white menu" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <strong>DEALS</strong></a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item text-white nbColor menu" href="#">អចលនទ្រព្យ</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">AUTO TALK</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"><strong>QUIZ</strong></a>
+          </li>
+          <li class="nav-item active khFont">
+            <a class="nav-link" href="#">កូវីត-១៩</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">STARTING UP</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <!-- 1st row -->
+        <div class="col-sm-4">
+          <img class="Newsimg" width="380" height="220" src="Sabay_News Images/Joe_Biden.jpg" alt="" title="News title" />
+          <div class="bottom-center khFont" id="khFont">ស្ថានភាពល្អបន្តិចហើយ ចំនួនអ្នកឆ្លងថយចុះជាងពីម្សិលមិញ ក្នុងតួលេខជាង ៥០០នាក់</div>
+          <div class="bottom-left khFont">ម្សិលមិញ ម៉ោង​ 11:11</div>
+        </div>
+        <div class="col-sm-4">
+          <img class="Newsimg" width="380" height="220" src="Sabay_News Images/Sport_News.jpg" alt="" title="News title" />
+          <div class="bottom-center khFont" id="khFont">ស្ថានភាពល្អបន្តិចហើយ ចំនួនអ្នកឆ្លងថយចុះជាងពីម្សិលមិញ ក្នុងតួលេខជាង ៥០០នាក់</div>
+          <div class="bottom-left khFont">ម្សិលមិញ ម៉ោង​ 11:11</div>
+        </div>
+        <div class="col-sm-4">
+          <img class="Newsimg" width="380" height="220" src="Sabay_News Images/News_Reporter.jpg" alt="" title="News title" />
+          <div class="bottom-center khFont" id="khFont">ស្ថានភាពល្អបន្តិចហើយ ចំនួនអ្នកឆ្លងថយចុះជាងពីម្សិលមិញ ក្នុងតួលេខជាង ៥០០នាក់</div>
+          <div class="bottom-left khFont">ម្សិលមិញ ម៉ោង​ 11:11</div>
+        </div>
+        <!-- 2nd row -->
+        <div class="col-sm-4">
+          <img class="Newsimg" width="380" height="220" src="Sabay_News Images/Sport_News.jpg" alt="" title="News title" />
+          <div class="bottom-center khFont" id="khFont">ស្ថានភាពល្អបន្តិចហើយ ចំនួនអ្នកឆ្លងថយចុះជាងពីម្សិលមិញ ក្នុងតួលេខជាង ៥០០នាក់</div>
+          <div class="bottom-left khFont">ម្សិលមិញ ម៉ោង​ 11:11</div>
+        </div>
+        <div class="col-sm-4">
+          <img class="Newsimg" width="380" height="220" src="Sabay_News Images/News_Reporter.jpg" alt="" title="News title" />
+          <div class="bottom-center khFont" id="khFont">ស្ថានភាពល្អបន្តិចហើយ ចំនួនអ្នកឆ្លងថយចុះជាងពីម្សិលមិញ ក្នុងតួលេខជាង ៥០០នាក់</div>
+          <div class="bottom-left khFont">ម្សិលមិញ ម៉ោង​ 11:11</div>
+        </div>
+        <div class="col-sm-4">
+          <img class="Newsimg" width="380" height="220" src="Sabay_News Images/Joe_Biden.jpg" alt="" title="News title" />
+          <div class="bottom-center khFont" id="khFont">ស្ថានភាពល្អបន្តិចហើយ ចំនួនអ្នកឆ្លងថយចុះជាងពីម្សិលមិញ ក្នុងតួលេខជាង ៥០០នាក់</div>
+          <div class="bottom-left khFont">ម្សិលមិញ ម៉ោង​ 11:11</div>
+        </div>
+      </div>
+      <br />
+      <!--  -->
+      <div class="container">
+        <div class="row">
+          <!--  -->
+          <div id="trapezoid"><div​ class="khFont" id="textinside">វីដេអូ ></div​></div>
+          <div id="triangle-topleft"></div>
+          <div id="line"></div>
+          <!--  -->
+        </div> ​​
+      </div>
+      <br /><br />
+      <div class="container">
+        <div class="row">
+          <!-- col-4 -->
+          <div class="col-4">
+            <img src="Sabay_News Images/Joe_Biden.jpg" class="img-pulse" width="360" height="220" alt="" />
+            <div>
+              <p class="khFont">ស្ថានភាពល្អបន្តិចហើយ ចំនួនអ្នកឆ្លងថយចុះជាងពីម្សិលមិញ ក្នុងតួលេខជាង ៥០០នាក់</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <img src="Sabay_News Images/Sport_News.jpg" class="img-pulse" width="360" height="220" alt="" />
+            <div>
+              <p class="khFont">Sស្ថានភាពល្អបន្តិចហើយ ចំនួនអ្នកឆ្លងថយចុះជាងពីម្សិលមិញ ក្នុងតួលេខជាង ៥០០នាក់</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <img src="Sabay_News Images/News_Reporter.jpg" class="img-pulse" width="360" height="220" alt="" />
+            <div>
+              <p class="khFont">ស្ថានភាពល្អបន្តិចហើយ ចំនួនអ្នកឆ្លងថយចុះជាងពីម្សិលមិញ ក្នុងតួលេខជាង ៥០០នាក់</p>
+            </div>
+          </div>
+          <!-- col-2 -->
+          <div class="col-2">
+            <img src="Sabay_News Images/Joe_Biden.jpg" class="img-pulse" width="160" height="100" alt="" />
+            <div>
+              <p class="khFont01 khFont-small">ស្ថានភាពល្អបន្តិចហើយ ចំនួនអ្នកឆ្លងថយចុះជាងពីម្សិលមិញ ក្នុងតួលេខជាង ៥០០នាក់</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <img src="Sabay_News Images/Sport_News.jpg" class="img-pulse" width="160" height="100" alt="" />
+            <div>
+              <p class="khFont01 khFont-small">ស្ថានភាពល្អបន្តិចហើយ ចំនួនអ្នកឆ្លងថយចុះជាងពីម្សិលមិញ ក្នុងតួលេខជាង ៥០០នាក់</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <img src="Sabay_News Images/News_Reporter.jpg" class="img-pulse" width="160" height="100" alt="" />
+            <div>
+              <p class="khFont01 khFont-small">ស្ថានភាពល្អបន្តិចហើយ ចំនួនអ្នកឆ្លងថយចុះជាងពីម្សិលមិញ ក្នុងតួលេខជាង ៥០០នាក់</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <img src="Sabay_News Images/Joe_Biden.jpg" class="img-pulse" width="160" height="100" alt="" />
+            <div>
+              <p class="khFont01 khFont-small">ស្ថានភាពល្អបន្តិចហើយ ចំនួនអ្នកឆ្លងថយចុះជាងពីម្សិលមិញ ក្នុងតួលេខជាង ៥០០នាក់</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <img src="Sabay_News Images/Sport_News.jpg" class="img-pulse" width="160" height="100" alt="" />
+            <div>
+              <p class="khFont01 khFont-small">ស្ថានភាពល្អបន្តិចហើយ ចំនួនអ្នកឆ្លងថយចុះជាងពីម្សិលមិញ ក្នុងតួលេខជាង ៥០០នាក់</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <img src="Sabay_News Images/News_Reporter.jpg" class="img-pulse" width="160" height="100" alt="" />
+            <div>
+              <p class="khFont01 khFont-small">ស្ថានភាពល្អបន្តិចហើយ ចំនួនអ្នកឆ្លងថយចុះជាងពីម្សិលមិញ ក្នុងតួលេខជាង ៥០០នាក់</p>
+            </div>
+          </div>
+          <!-- col-2 -->
+          <div class="col-2">
+            <img src="Sabay_News Images/Sport_News.jpg" class="img-pulse" width="160" height="100" alt="" />
+            <div>
+              <p class="khFont01 khFont-small">ស្ថានភាពល្អបន្តិចហើយ ចំនួនអ្នកឆ្លងថយចុះជាងពីម្សិលមិញ ក្នុងតួលេខជាង ៥០០នាក់</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <img src="Sabay_News Images/News_Reporter.jpg" class="img-pulse" width="160" height="100" alt="" />
+            <div>
+              <p class="khFont01 khFont-small">ស្ថានភាពល្អបន្តិចហើយ ចំនួនអ្នកឆ្លងថយចុះជាងពីម្សិលមិញ ក្នុងតួលេខជាង ៥០០នាក់</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <img src="Sabay_News Images/Joe_Biden.jpg" class="img-pulse" width="160" height="100" alt="" />
+            <div>
+              <p class="khFont01 khFont-small">ស្ថានភាពល្អបន្តិចហើយ ចំនួនអ្នកឆ្លងថយចុះជាងពីម្សិលមិញ ក្នុងតួលេខជាង ៥០០នាក់</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <img src="Sabay_News Images/Sport_News.jpg" class="img-pulse" width="160" height="100" alt="" />
+            <div>
+              <p class="khFont01 khFont-small">ស្ថានភាពល្អបន្តិចហើយ ចំនួនអ្នកឆ្លងថយចុះជាងពីម្សិលមិញ ក្នុងតួលេខជាង ៥០០នាក់</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <img src="Sabay_News Images/News_Reporter.jpg" class="img-pulse" width="160" height="100" alt="" />
+            <div>
+              <p class="khFont01 khFont-small">ស្ថានភាពល្អបន្តិចហើយ ចំនួនអ្នកឆ្លងថយចុះជាងពីម្សិលមិញ ក្នុងតួលេខជាង ៥០០នាក់</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <img src="Sabay_News Images/Joe_Biden.jpg" class="img-pulse" width="160" height="100" alt="" />
+            <div>
+              <p class="khFont01 khFont-small">ស្ថានភាពល្អបន្តិចហើយ ចំនួនអ្នកឆ្លងថយចុះជាងពីម្សិលមិញ ក្នុងតួលេខជាង ៥០០នាក់</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+          <!--  -->
+          <div id="trapezoid"><div​ class="khFont" id="textinside">វីដេអូ ></div​></div>
+          <div id="triangle-topleft"></div>
+          <div id="line"></div>
+          <!--  -->
+        </div>
+      </div><br>
+      <br><br>
+        <div class="container">
+          <div class="row">
+            <div class="card col-4" style="width: 18rem;">
+              <img src="Sabay_News Images/Tech_News.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="col-2">
+              <img src="Sabay_News Images/Sport_News.jpg" class="img-pulse" width="160" height="100" alt="" />
+            <div>
+              <p class="khFont01 khFont-small">ស្ថានភាពល្អបន្តិចហើយ ចំនួនអ្នកឆ្លងថយចុះជាងពីម្សិលមិញ ក្នុងតួលេខជាង ៥០០នាក់</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <img src="Sabay_News Images/News_Reporter.jpg" class="img-pulse" width="160" height="100" alt="" />
+            <div>
+              <p class="khFont01 khFont-small">ស្ថានភាពល្អបន្តិចហើយ ចំនួនអ្នកឆ្លងថយចុះជាងពីម្សិលមិញ ក្នុងតួលេខជាង ៥០០នាក់</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <img src="Sabay_News Images/Joe_Biden.jpg" class="img-pulse" width="160" height="100" alt="" />
+            <div>
+              <p class="khFont01 khFont-small">ស្ថានភាពល្អបន្តិចហើយ ចំនួនអ្នកឆ្លងថយចុះជាងពីម្សិលមិញ ក្នុងតួលេខជាង ៥០០នាក់</p>
+            </div>
+          </div>
+          <div class="col-2">
+              <img src="Sabay_News Images/Sport_News.jpg" class="img-pulse" width="160" height="100" alt="" />
+            <div>
+              <p class="khFont01 khFont-small">ស្ថានភាពល្អបន្តិចហើយ ចំនួនអ្នកឆ្លងថយចុះជាងពីម្សិលមិញ ក្នុងតួលេខជាង ៥០០នាក់</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>​
+
+    <!-- Footer -->
+    <footer class="footer text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <img width="200" height="80" src="Sabay_News Images/Footer_logo.png" alt="" title="News title" />
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <p class="khFont">© រក្សា​សិទ្ធិ​គ្រប់​យ៉ាង​ដោយ​ Sabay ឆ្នាំ​២០១៦</p>
+                </li>
+                <li>
+                  <p class="khFont">អាសយដ្ឋាន</p>
+                </li>
+                <li>
+                  <p class="khFont">អគារ​លេខ ៣០៨ មហាវិថីព្រះមុន្នីវង្ស សង្កាត់បឹងរាំង ខណ្ឌដូនពេញ</p>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase khFont">អំពីយើង</h5>
+
+              <ul class="list-unstyled mb-0">
+                <p class="khFont">Sabay Digital Corporation ជា​ក្រុមហ៊ុន​ព័ត៌មាន​ឌីជីថល និង​កម្សាន្ត​ឈាន​មុខ​គេ​នៅ​កម្ពុជា។ ព័ត៌មាន​បន្ថែម ផលិត​ផល​ និង​ សេវាកម្ម របស់ Sabay</p>
+                <li>
+                  <div class="d-flex flex-row bd-highlight mb-3">
+                    <a href="https://news.sabay.com.kh/" class="p-2 bd-highlight"><img src="Sabay_News Images/logo.png" width="30" height="30" alt="" /></a>
+                    <a href="https://enovel.sabay.com/book" class="p-2 bd-highlight"><img src="Sabay_News Images/Sabay_eNovel.jpg" width="30" height="30" alt="" /></a>
+                    <a href="https://news.sabay.com.kh/" class="p-2 bd-highlight"><img src="Sabay_News Images/logo.png" width="30" height="30" alt="" /></a>
+                    <a href="https://enovel.sabay.com/book" class="p-2 bd-highlight"><img src="Sabay_News Images/Sabay_eNovel.jpg" width="30" height="30" alt="" /></a>
+                    <a href="https://news.sabay.com.kh/" class="p-2 bd-highlight"><img src="Sabay_News Images/logo.png" width="30" height="30" alt="" /></a>
+                    <a href="https://enovel.sabay.com/book" class="p-2 bd-highlight"><img src="Sabay_News Images/Sabay_eNovel.jpg" width="30" height="30" alt="" /></a>
+                    <a href="https://news.sabay.com.kh/" class="p-2 bd-highlight"><img src="Sabay_News Images/logo.png" width="30" height="30" alt="" /></a>
+                    <a href="https://enovel.sabay.com/book" class="p-2 bd-highlight"><img src="Sabay_News Images/Sabay_eNovel.jpg" width="30" height="30" alt="" /></a>
+                    <a href="https://news.sabay.com.kh/" class="p-2 bd-highlight"><img src="Sabay_News Images/logo.png" width="30" height="30" alt="" /></a>
+                    <a href="https://enovel.sabay.com/book" class="p-2 bd-highlight"><img src="Sabay_News Images/Sabay_eNovel.jpg" width="30" height="30" alt="" /></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase khFont">ជួបគ្នានៅបណ្តាញសង្គម</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <!-- Section: Social media -->
+                  <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+                    <!-- Github -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+                  </section>
+                  <!-- Section: Social media -->
+                </li>
+                <li>
+                  <p class="khFont">ទំនាក់ទំនង</p>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">info@sabay.com</a>
+                </li>
+                <li>
+                  <p class="khFont">089 780 093</p>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+      </div>
+      <!-- Grid container -->
+    </footer>
+    <!-- Footer -->
+  </body>
+</html>
