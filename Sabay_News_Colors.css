@@ -1,0 +1,34 @@
+/* Drawing and texts*/
+#trapezoid1 {
+  position: absolute;
+  border-bottom: 50px solid #fa5480;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 125px;
+  z-index: 1;
+}
+#triangle-topleft1 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 50px solid #fa5480;
+  border-right: 50px solid transparent;
+  margin-top: 1px;
+}
+#line1 {
+  position: absolute;
+  width: 75%;
+  height: 47px;
+  border-bottom: 5px solid #fa5480;
+  margin-top: 5px;
+}
+#textinside1 {
+  position: absolute;
+  color: #ffffff;
+  font-size: larger;
+  margin-top: 15px;
+  margin-left: 10px;
+  z-index: 2;
+}
+/* Drawing and texts*/
