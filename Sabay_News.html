@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -27,6 +26,12 @@
         position: relative;
         min-height: 50px;
         margin-bottom: 22px;
+      }
+      .sticky {
+	      position: -webkit-sticky;
+	      position: sticky;
+      	top: 0;
+        z-index: 1;
       }
       .khFont {
         font-family: "Koulen", cursive;
@@ -138,7 +143,7 @@
       </a>
     </div>
     <!-- Navbar -->
-    <nav id="menu" class="navbar navbar-expand-lg navbar-dark nbColor" role="navigation">
+    <nav id="menu" class="navbar navbar-expand-lg navbar-dark nbColor sticky" role="navigation">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
