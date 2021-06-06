@@ -32,3 +32,143 @@
   z-index: 2;
 }
 /* Drawing and texts*/
+
+/* Drawing and texts*/
+#trapezoid2 {
+  position: absolute;
+  border-bottom: 50px solid #38c378;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 125px;
+  z-index: 1;
+}
+#triangle-topleft2 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 50px solid #38c378;
+  border-right: 50px solid transparent;
+  margin-top: 1px;
+}
+#line2 {
+  position: absolute;
+  width: 75%;
+  height: 47px;
+  border-bottom: 5px solid #38c378;
+  margin-top: 5px;
+}
+#textinside2 {
+  position: absolute;
+  color: #ffffff;
+  font-size: larger;
+  margin-top: 15px;
+  margin-left: 0;
+  z-index: 2;
+}
+/* Drawing and texts*/
+
+/* Drawing and texts*/
+#trapezoid3 {
+  position: absolute;
+  border-bottom: 50px solid #f9a62b;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 125px;
+  z-index: 1;
+}
+#triangle-topleft3 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 50px solid #f9a62b;
+  border-right: 50px solid transparent;
+  margin-top: 1px;
+}
+#line3 {
+  position: absolute;
+  width: 75%;
+  height: 47px;
+  border-bottom: 5px solid #f9a62b;
+  margin-top: 5px;
+}
+#textinside3 {
+  position: absolute;
+  color: #ffffff;
+  font-size: larger;
+  margin-top: 15px;
+  margin-left: 10px;
+  z-index: 2;
+}
+/* Drawing and texts*/
+
+/* Drawing and texts*/
+#trapezoid4 {
+  position: absolute;
+  border-bottom: 50px solid #4390f8;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 125px;
+  z-index: 1;
+}
+#triangle-topleft4 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 50px solid #4390f8;
+  border-right: 50px solid transparent;
+  margin-top: 1px;
+}
+#line4 {
+  position: absolute;
+  width: 75%;
+  height: 47px;
+  border-bottom: 5px solid #4390f8;
+  margin-top: 5px;
+}
+#textinside4 {
+  position: absolute;
+  color: #ffffff;
+  font-size: larger;
+  margin-top: 15px;
+  margin-left: 10px;
+  z-index: 2;
+}
+/* Drawing and texts*/
+
+/* Drawing and texts*/
+#trapezoid5 {
+  position: absolute;
+  border-bottom: 50px solid #555;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 125px;
+  z-index: 1;
+}
+#triangle-topleft5 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 50px solid #555;
+  border-right: 50px solid transparent;
+  margin-top: 1px;
+}
+#line5 {
+  position: absolute;
+  width: 75%;
+  height: 47px;
+  border-bottom: 5px solid #555;
+  margin-top: 5px;
+}
+#textinside5 {
+  position: absolute;
+  color: #ffffff;
+  font-size: larger;
+  margin-top: 15px;
+  margin-left: 10px;
+  z-index: 2;
+}
+/* Drawing and texts*/
