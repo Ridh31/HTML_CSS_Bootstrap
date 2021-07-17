@@ -1,2 +1,1 @@
-# Web Development
-# Web Training
+# HTML, CSS, Bootstrap
